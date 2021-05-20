@@ -1,0 +1,307 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "PSI接口",
+        "version": "0.1"
+    },
+    "paths": {
+        "/Web/API/GoodsApi/queryDataWithSalePrice": {
+            "post": {
+                "tags": [
+                    "销售订单"
+                ],
+                "summary": "销售订单中获取商品列表",
+                "description": "销售订单中获取商品列表",
+                "operationId": "API\\Controller\\GoodsController::queryDataWithSalePrice",
+                "parameters": [
+                    {
+                        "name": "tokenId",
+                        "in": "query",
+                        "description": "token",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "queryKey",
+                        "in": "query",
+                        "description": "查询条件",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "customerId ",
+                        "in": "query",
+                        "description": "客户ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "返回json"
+                    }
+                }
+            }
+        },
+        "/Web/API/SaleBill/sobillList": {
+            "get": {
+                "tags": [
+                    "销售订单"
+                ],
+                "summary": "销售订单列表",
+                "description": "销售订单列表",
+                "operationId": "API\\Controller\\SaleBillController::sobillList",
+                "parameters": [
+                    {
+                        "name": "tokenId",
+                        "in": "query",
+                        "description": "token",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "customerId",
+                        "in": "query",
+                        "description": "客户ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "receivingType",
+                        "in": "query",
+                        "description": "收款方式",
+                        "required": true,
+                        "schema": {
+                            "type": "number"
+                        }
+                    },
+                    {
+                        "name": "start",
+                        "in": "query",
+                        "description": "开始下标",
+                        "required": true,
+                        "schema": {
+                            "type": "number"
+                        }
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "每页数量",
+                        "required": true,
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "返回json"
+                    }
+                }
+            }
+        },
+        "/Web/API/SaleBill/editSOBill": {
+            "post": {
+                "tags": [
+                    "销售订单"
+                ],
+                "summary": "新增或编辑销售订单",
+                "description": "新增或编辑销售订单",
+                "operationId": "API\\Controller\\SaleBillController::editSOBill",
+                "parameters": [
+                    {
+                        "name": "tokenId",
+                        "in": "query",
+                        "description": "token",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "jsonStr: ",
+                        "in": "query",
+                        "description": "提交字符串 ，中文Unicode 编码",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "返回json"
+                    }
+                }
+            }
+        },
+        "/Web/API/TestApi/testApiGet": {
+            "get": {
+                "tags": [
+                    "测试接口"
+                ],
+                "summary": "测试Get接口",
+                "description": "API测试Get接口",
+                "operationId": "API\\Controller\\TestApiController::testApiGet",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "query",
+                        "description": "用户ID",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "返回json"
+                    }
+                }
+            }
+        },
+        "/Web/API/TestApi/testApiPost": {
+            "post": {
+                "tags": [
+                    "测试接口"
+                ],
+                "summary": "测试Post接口",
+                "description": "API测试Post接口",
+                "operationId": "API\\Controller\\TestApiController::testApiPost",
+                "parameters": [
+                    {
+                        "name": "loginName",
+                        "in": "query",
+                        "description": "用户名",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "密码",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "返回json"
+                    }
+                }
+            }
+        },
+        "/Web/API/User/doLogin": {
+            "post": {
+                "tags": [
+                    "用户"
+                ],
+                "summary": "登录",
+                "description": "登录接口",
+                "operationId": "API\\Controller\\UserController::doLogin",
+                "parameters": [
+                    {
+                        "name": "loginName",
+                        "in": "query",
+                        "description": "用户名",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "密码",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "返回json"
+                    }
+                }
+            }
+        },
+        "/Web/API/User/token": {
+            "get": {
+                "tags": [
+                    "用户"
+                ],
+                "summary": "验证token",
+                "description": "验证token是否有效",
+                "operationId": "API\\Controller\\UserController::token",
+                "parameters": [
+                    {
+                        "name": "loginName",
+                        "in": "query",
+                        "description": "用户名",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "密码",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "返回json"
+                    }
+                }
+            }
+        },
+        "/Web/API/User/doLogout": {
+            "get": {
+                "tags": [
+                    "用户"
+                ],
+                "summary": "退出",
+                "description": "退出",
+                "operationId": "API\\Controller\\UserController::doLogout",
+                "parameters": [
+                    {
+                        "name": "tokenId",
+                        "in": "query",
+                        "description": "tokenId",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "返回json"
+                    }
+                }
+            }
+        }
+    }
+}

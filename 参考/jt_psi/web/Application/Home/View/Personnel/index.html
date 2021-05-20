@@ -1,0 +1,42 @@
+<layout name="layout" />
+
+<script src="{$uri}Public/Scripts/PSI/Personnel/MainForm.js?dt={$dtFlag}"
+	type="text/javascript"></script>
+<script src="{$uri}Public/Scripts/PSI/Personnel/PersonnelEditForm.js?dt={$dtFlag}"
+	type="text/javascript"></script>
+<script src="{$uri}Public/Scripts/PSI/Personnel/ChangePersonnelPasswordForm.js?dt={$dtFlag}"
+	type="text/javascript"></script>
+<script src="{$uri}Public/Scripts/PSI/Personnel/GoodsBindingForm.js?dt={$dtFlag}"
+	type="text/javascript"></script>
+
+<script src="{$uri}Public/Scripts/PSI/Goods/GoodsWithSalePriceField.js?dt={$dtFlag}"
+	type="text/javascript"></script>
+
+<script src="{$uri}Public/Scripts/PSI/UX/CellEditing.js?dt={$dtFlag}"
+	type="text/javascript"></script>
+<!-- <script src="{$uri}Public/Lodop/LodopFuncs.js?dt={$dtFlag}"
+	type="text/javascript"></script> -->
+
+
+<script>
+	Ext.onReady(function() {
+		PSI.Const.PROD_NAME = "{$productionName}";
+
+		var app = Ext.create("PSI.App", {
+			userName : "{$loginUserName}",
+			productionName : "{$productionName}",
+			appHeaderInfo : {
+				title : "{$title}",
+				iconCls : "PSI-fid-8999"
+			}
+		});
+
+		app.add(Ext.create("PSI.Personnel.MainForm", {
+			pAddPersonnel : "{$pAddPersonnel}",
+			pEditPersonnel : "{$pEditPersonnel}",
+			pDeletePersonnel : "{$pDeletePersonnel}",
+			pChangePassword : "{$pChangePassword}",
+			pGoodsBinding : "{$pGoodsBinding}"
+		}));
+	});
+</script>

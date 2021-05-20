@@ -1,0 +1,6 @@
+建表 t_inventory_batch
+ t_ws_bill_detail 表增加 batch_date
+ t_pw_bill_detail  表增加 batch_date
+
+
+ t_warehouse 增加 is_default int  默认0

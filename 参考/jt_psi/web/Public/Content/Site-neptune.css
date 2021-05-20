@@ -1,0 +1,38 @@
+#__PSITopPanel_header-body{
+height: 40px!important;
+}
+.x-window-header-text-container-default {
+  line-height: 16px;
+}
+.PSI-button-ok,.PSI-button-add ,.PSI-help,.PSI-button-delete,.PSI-button-commit,.PSI-button-hide,.PSI-button-refresh,.PSI-portal-inventory,.PSI-button-edit,.x-tbar-loading,.x-tbar-page-next,.x-tbar-page-last,.x-tbar-page-prev,.x-tbar-page-first  {
+	filter: grayscale(100%) brightness(500%)!important;
+}
+.x-panel-header-body-default-top{
+	height: 30px !important;
+}
+#__PSITopPanel_header-innerCt .x-btn-inner {
+font-size: 13px;
+}
+.x-panel-header-default-horizontal-noborder {
+  padding: 4px 10px 10px 10px !important;
+}
+.x-btn-default-toolbar-small-disabled {
+
+  background-color: #003e7a !important;
+}
+.fontwhite{
+  color: #ffffff !important;
+}
+/* .x-form-item-label{
+  color: #ffffff !important;
+} */
+.x-toolbar-footer{
+  background: #ffffff !important;
+}
+.x-table-form-item{
+  margin-top: 2px !important;
+  margin-bottom: 3px !important;
+}
+/* .x-table-form-item{
+  background-color: #7ac7ff !important;
+} */
