@@ -3,7 +3,7 @@ Ext.define("PSI.Const", {
 		REQUIRED : '<span style="color:red;font-weight:bold" data-qtip="必录项">*</span>',
 		LOADING : "数据加载中...",
 		SAVING : "数据保存中...",
-		BASE_URL : "http://local.platform.com/",
+		BASE_URL : "http://www.storageplatform.cn/",
 		MOT : "0", // 模块打开方式
 		GC_DEC_NUMBER : 0, // 商品数量小数位数
 		PROD_NAME : "PSI", // 产品名称
