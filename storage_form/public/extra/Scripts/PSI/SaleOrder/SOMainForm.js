@@ -627,7 +627,7 @@ Ext.define("PSI.SaleOrder.SOMainForm", {
                     xtype: "actioncolumn",
                     items: [{
                         icon: me
-                            .URL("Public/Images/icons/edit.png"),
+                            .URL("Images/icons/edit.png"),
                         tooltip: "订单变更",
                         handler: me.onChangeOrder,
                         scope: me

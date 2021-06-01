@@ -295,7 +295,7 @@ Ext.define("PSI.SaleContract.SCMainForm", {
                 actionMethods: {
                     read: "POST"
                 },
-                url: me.URL("Home/SaleContract/scbillList"),
+                url: me.URL("saleContract/scbillList"),
                 reader: {
                     root: 'dataList',
                     totalProperty: 'totalCount'
@@ -815,7 +815,7 @@ Ext.define("PSI.SaleContract.SCMainForm", {
         el.mask(PSI.Const.LOADING);
 
         var r = {
-            url: me.URL("Home/SaleContract/scBillDetailList"),
+            url: me.URL("saleContract/scBillDetailList"),
             params: {
                 id: bill.get("id")
             },

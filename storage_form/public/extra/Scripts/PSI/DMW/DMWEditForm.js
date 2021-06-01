@@ -597,7 +597,7 @@ Ext.define("PSI.DMW.DMWEditForm", {
                     width: 50,
                     xtype: "actioncolumn",
                     items: [{
-                        icon: me.URL("Public/Images/icons/delete.png"),
+                        icon: me.URL("Images/icons/delete.png"),
                         tooltip: "删除当前记录",
                         handler: function(grid, row) {
                             var store = grid.getStore();
@@ -615,7 +615,7 @@ Ext.define("PSI.DMW.DMWEditForm", {
                     width: 50,
                     xtype: "actioncolumn",
                     items: [{
-                        icon: me.URL("Public/Images/icons/insert.png"),
+                        icon: me.URL("Images/icons/insert.png"),
                         tooltip: "在当前记录之前插入新记录",
                         handler: function(grid, row) {
                             var store = grid.getStore();
@@ -631,7 +631,7 @@ Ext.define("PSI.DMW.DMWEditForm", {
                     xtype: "actioncolumn",
                     items: [{
                         icon: me
-                            .URL("Public/Images/icons/add.png"),
+                            .URL("Images/icons/add.png"),
                         tooltip: "在当前记录之后新增记录",
                         handler: function(grid, row) {
                             var store = grid.getStore();

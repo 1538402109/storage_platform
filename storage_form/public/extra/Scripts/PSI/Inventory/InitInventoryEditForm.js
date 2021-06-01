@@ -23,7 +23,7 @@ Ext.define("PSI.Inventory.InitInventoryEditForm", {
 
 		var logoHtml = "<img style='float:left;margin:10px 10px 0px 10px;width:48px;height:48px;' src='"
 				+ PSI.Const.BASE_URL
-				+ "Public/Images/edit-form-update.png'></img>"
+				+ "Images/edit-form-update.png'></img>"
 				+ "<h2 style='margin:20px'>建账仓库：<span style='color:#cf1322'>"
 				+ warehouse.get("name") + "</span></h2>";
 

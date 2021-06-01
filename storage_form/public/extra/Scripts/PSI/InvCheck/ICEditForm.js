@@ -608,7 +608,7 @@ Ext.define("PSI.InvCheck.ICEditForm", {
                     id: "columnActionDelete",
                     items: [{
                         icon: PSI.Const.BASE_URL +
-                            "Public/Images/icons/delete.png",
+                            "Images/icons/delete.png",
                         tooltip: "删除当前记录",
                         handler: function(grid, row) {
                             var store = grid.getStore();
@@ -629,7 +629,7 @@ Ext.define("PSI.InvCheck.ICEditForm", {
                     xtype: "actioncolumn",
                     items: [{
                         icon: PSI.Const.BASE_URL +
-                            "Public/Images/icons/insert.png",
+                            "Images/icons/insert.png",
                         tooltip: "在当前记录之前插入新记录",
                         handler: function(grid, row) {
                             var store = grid.getStore();
@@ -647,7 +647,7 @@ Ext.define("PSI.InvCheck.ICEditForm", {
                     xtype: "actioncolumn",
                     items: [{
                         icon: PSI.Const.BASE_URL +
-                            "Public/Images/icons/add.png",
+                            "Images/icons/add.png",
                         tooltip: "在当前记录之后新增记录",
                         handler: function(grid, row) {
                             var store = grid.getStore();

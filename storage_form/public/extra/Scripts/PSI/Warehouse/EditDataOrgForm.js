@@ -43,7 +43,7 @@ Ext.define("PSI.Warehouse.EditDataOrgForm", {
 
 		var logoHtml = "<img style='float:left;margin:10px 10px 0px 20px;width:48px;height:48px;' src='"
 				+ PSI.Const.BASE_URL
-				+ "Public/Images/edit-form-data.png'></img>"
+				+ "Images/edit-form-data.png'></img>"
 				+ "<h2 style='color:#196d83'>修改数据域</h2>"
 				+ "<p style='color:#196d83'>点击帮助按钮可以了解更多数据域的应用场景</p>";
 

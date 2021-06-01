@@ -237,7 +237,7 @@ Ext.define("PSI.Permission.SelectPermissionForm", {
 								xtype : "actioncolumn",
 								items : [{
 									icon : PSI.Const.BASE_URL
-											+ "Public/Images/icons/add.png",
+											+ "Images/icons/add.png",
 									handler : me.onAddPermission,
 									scope : me
 								}]
@@ -307,7 +307,7 @@ Ext.define("PSI.Permission.SelectPermissionForm", {
 								xtype : "actioncolumn",
 								items : [{
 									icon : PSI.Const.BASE_URL
-											+ "Public/Images/icons/delete.png",
+											+ "Images/icons/delete.png",
 									handler : function(grid, row) {
 										grid.getStore().removeAt(row);
 									},

@@ -71,7 +71,7 @@ Ext.define("PSI.App", {
                     if (fid.substring(0, 2) == "ct") {
                         // 码表
                         fileName = PSI.Const.BASE_URL +
-                            "Public/Images/fid/default.png";
+                            "Images/fid/default.png";
                     }
 
                     return "<a href='#' style='text-decoration:none'><img src='" +

@@ -336,7 +336,7 @@ Ext.define("PSI.SaleContract.SCEditForm", {
         var el = me.getEl() || Ext.getBody();
         el.mask(PSI.Const.LOADING);
         Ext.Ajax.request({
-            url: PSI.Const.BASE_URL + "Home/SaleContract/scBillInfo",
+            url: PSI.Const.BASE_URL + "saleContract/scBillInfo",
             params: {
                 id: me.hiddenId.getValue()
             },
@@ -438,7 +438,7 @@ Ext.define("PSI.SaleContract.SCEditForm", {
 
         Ext.getBody().mask("正在保存中...");
         Ext.Ajax.request({
-            url: PSI.Const.BASE_URL + "Home/SaleContract/editSCBill",
+            url: PSI.Const.BASE_URL + "saleContract/editSCBill",
             method: "POST",
             params: {
                 jsonStr: me.getSaveData()
@@ -678,7 +678,7 @@ Ext.define("PSI.SaleContract.SCEditForm", {
                 xtype: "actioncolumn",
                 items: [{
                     icon: PSI.Const.BASE_URL +
-                        "Public/Images/icons/delete.png",
+                        "Images/icons/delete.png",
                     tooltip: "删除当前记录",
                     handler: function(grid, row) {
                         var store = grid.getStore();
@@ -699,7 +699,7 @@ Ext.define("PSI.SaleContract.SCEditForm", {
                 xtype: "actioncolumn",
                 items: [{
                     icon: PSI.Const.BASE_URL +
-                        "Public/Images/icons/insert.png",
+                        "Images/icons/insert.png",
                     tooltip: "在当前记录之前插入新记录",
                     handler: function(grid, row) {
                         var store = grid.getStore();
@@ -717,7 +717,7 @@ Ext.define("PSI.SaleContract.SCEditForm", {
                 xtype: "actioncolumn",
                 items: [{
                     icon: PSI.Const.BASE_URL +
-                        "Public/Images/icons/add.png",
+                        "Images/icons/add.png",
                     tooltip: "在当前记录之后新增记录",
                     handler: function(grid, row) {
                         var store = grid.getStore();

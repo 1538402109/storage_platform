@@ -49,7 +49,7 @@ Ext.define("PSI.Permission.EditForm", {
 								xtype : "actioncolumn",
 								items : [{
 									icon : PSI.Const.BASE_URL
-											+ "Public/Images/icons/delete.png",
+											+ "Images/icons/delete.png",
 									handler : function(grid, row) {
 										var store = grid.getStore();
 										store.remove(store.getAt(row));
@@ -121,7 +121,7 @@ Ext.define("PSI.Permission.EditForm", {
 								xtype : "actioncolumn",
 								items : [{
 									icon : PSI.Const.BASE_URL
-											+ "Public/Images/icons/delete.png",
+											+ "Images/icons/delete.png",
 									handler : function(grid, row) {
 										var store = grid.getStore();
 										store.remove(store.getAt(row));

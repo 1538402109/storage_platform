@@ -58,7 +58,7 @@ Ext.define("PSI.Subject.EditForm", {
 				: "edit-form-update.png";
 		var logoHtml = "<img style='float:left;margin:10px 20px 0px 10px;width:48px;height:48px;' src='"
 				+ PSI.Const.BASE_URL
-				+ "Public/Images/"
+				+ "Images/"
 				+ f
 				+ "'></img>"
 				+ "<h2 style='color:#196d83'>"

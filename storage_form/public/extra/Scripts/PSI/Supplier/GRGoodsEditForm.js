@@ -43,7 +43,7 @@ Ext.define("PSI.Supplier.GRGoodsEditForm", {
 		var f = "edit-form-create.png";
 		var logoHtml = "<img style='float:left;margin:10px 20px 0px 10px;width:48px;height:48px;' src='"
 				+ PSI.Const.BASE_URL
-				+ "Public/Images/"
+				+ "Images/"
 				+ f
 				+ "'></img>"
 				+ "<h2 style='color:#196d83'>"
